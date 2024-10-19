@@ -1,6 +1,11 @@
-using JuliaCrash
 using Test
+using Manifolds
 
-@testset "JuliaCrash.jl" begin
-    # Write your tests here.
+
+
+@testset "Julia crash" for M in
+    [
+        Sphere(2),
+    ]
+    [] isa Vector{<:Sphere(3)}
 end

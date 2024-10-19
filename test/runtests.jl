@@ -7,5 +7,5 @@ using Manifolds
     [
         Sphere(2),
     ]
-    [] isa Vector{<:Sphere(3)}
+    @test_throws TypeError [] isa Vector{<:Sphere(3)}
 end
